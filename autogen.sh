@@ -16,8 +16,11 @@ autoreconf --install
 if [ $# -eq 0 ] ; then exit 0
 else
 	test "x$1" == xmake
-	#./configure --prefix=$HOME
-	./configure --prefix=/home/dos
+	DIR="$(readlink -f `pwd`)"
+	mkdir ../DOS-build
+	cd ../DOS-build
+	#"$DIR/configure" "--prefix=$HOME"
+	"$DIR/configure" --prefix=/home/dos
 	make
 	#make install
 	sudo -u dos make -j1 install
