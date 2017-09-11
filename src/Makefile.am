@@ -21,8 +21,9 @@ libdos_la_CFLAGS = -Wextra -pedantic -ansi -Werror -Wdouble-promotion \
                    -Winit-self
 
 bin_PROGRAMS = forkbomb
-forkbomb_test_SOURCES = forkbomb.c
-forkbomb_test_LDADD = libdos.la
+forkbomb_SOURCES = forkbomb.c
+forkbomb_LDADD = libdos.la
+forkbomb_LDFLAGS = -lcowsay
 forkbomb_la_CFLAGS = -Wextra -pedantic -ansi -Werror -Wdouble-promotion \
                    -Wformat=2 -Wswitch-default -Wswitch-enum -Wuninitialized \
                    -Wstrict-aliasing=1 -Wstrict-overflow=5 \
