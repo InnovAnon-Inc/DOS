@@ -5,7 +5,7 @@
 
 #include "dos.h"
 
-__attribute__ ((leaf, nonnull (2), noreturn, nothrow))
+__attribute__ ((leaf, nonnull (2), /*noreturn, */nothrow))
 int main (int argc, char *argv[]){
 	#pragma GCC diagnostic push
 	#pragma GCC diagnostic ignored "-Wunused-result"
