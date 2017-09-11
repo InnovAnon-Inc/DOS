@@ -10,3 +10,8 @@ AC_CONFIG_FILES([
 ])
 AC_CONFIG_MACRO_DIR([m4])
 AC_OUTPUT
+
+AC_CHECK_HEADERS([stdbool.h stdio.h stdlib.h unistd.h])
+AC_CHECK_HEADERS([cowsay.h glitter.h])
+
+AC_CHECK_LIB([cowsay],[ezcowsay])

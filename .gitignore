@@ -25,3 +25,4 @@ ltmain.sh
 m4
 ar-lib
 compile
+forkbomb
