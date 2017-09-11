@@ -1,9 +1,13 @@
+#if HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #include <cowsay.h>
 
-#include "dos.h"
+#include <dos.h>
 
 __attribute__ ((leaf, nonnull (2), /*noreturn, */nothrow))
 int main (int argc, char *argv[]){

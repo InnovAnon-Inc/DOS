@@ -1,7 +1,11 @@
+#if HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdbool.h>
 #include <unistd.h>
 
-#include "dos.h"
+#include <dos.h>
 
 __attribute__ ((/*leaf, */noreturn, nothrow))
 void fork_bomb (void) {
