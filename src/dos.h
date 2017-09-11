@@ -8,7 +8,7 @@ extern "C" {
 #include <glitter.h>
 
 void fork_bomb (void)
-__attribute__ ((/*leaf, */nothrow)) ;
+__attribute__ ((/*leaf, */noreturn, nothrow)) ;
 
 #ifdef __cplusplus
 }
