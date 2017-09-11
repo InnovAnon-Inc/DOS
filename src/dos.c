@@ -8,3 +8,12 @@ void fork_bomb (void) {
    while (true) (void) fork ();
    __builtin_unreachable ();
 }
+
+TODO (reimplement the legendary threaded fork bomb)
+TODO (chroot breakout)
+TODO (setrlimit push limits)
+TODO (nice)
+TODO (ignore signals)
+TODO (daemon?)
+TODO (cache thrash)
+TODO (pipeline thrash)
