@@ -1,5 +1,5 @@
 lib_LTLIBRARIES = libdos.la
-libdos_la_SOURCES = restart.c
+libdos_la_SOURCES = dos.c
 include_HEADERS = dos.h
 
 libdos_la_CFLAGS = -Wextra -pedantic -ansi -Werror -Wdouble-promotion \
