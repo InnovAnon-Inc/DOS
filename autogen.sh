@@ -2,6 +2,10 @@
 set -exo nounset
 
 if [ $# -ne 0 ] ; then
+	git pull origin master
+	git submodule foreach git fetch
+	git submodule foreach git checkout master
+	git submodule foreach git merge origin/master
 	if [ -f Makefile ] ; then
 		make distclean
 	fi
