@@ -8,3 +8,5 @@ forkbomb_SOURCES = forkbomb.c
 forkbomb_LDADD = libdos.la
 forkbomb_LDFLAGS = -lcowsay
 #forkbomb_la_CFLAGS =
+
+AM_CPPFLAGS = -D__STDC_INT64__
