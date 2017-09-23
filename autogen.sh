@@ -11,7 +11,7 @@ if [ $# -ne 0 ] ; then
 	fi
 fi
 
-autoreconf --install
+autoreconf --verbose --force --install --include=m4
 
 if [ $# -eq 0 ] ; then exit 0
 else
