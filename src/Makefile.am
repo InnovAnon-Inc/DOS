@@ -1,13 +1,18 @@
+LIBDOS_LIBADD =
+
 lib_LTLIBRARIES = libdos.la
-libdos_la_SOURCES = dos.c
 include_HEADERS = dos.h
-#libdos_la_CFLAGS =
+libdos_la_LIBADD = $(LIBDOS_LIBADD)
 
 bin_PROGRAMS = forkbomb
-forkbomb_SOURCES = forkbomb.c
-forkbomb_LDADD = libdos.la -lcowsay
+forkbomb_LDADD  = libdos.la $(LIBDOS_LIBADD)
+forkbomb_LDADD += ../YACS/src/.libs/libcowsay.la $(LIBCOWSAY_LIBADD)
 #forkbomb_la_CFLAGS =
 
 AM_CPPFLAGS = -D__STDC_INT64__
-AM_CPPFLAGS += -I $(srcdir)/../glitter/src
-AM_CPPFLAGS += -I $(srcdir)/../YACS/src
+
+SUBDIRS = ../glitter
+AM_CPPFLAGS += -I ../glitter/src
+
+SUBDIRS += ../YACS
+AM_CPPFLAGS += -I ../YACS/src
