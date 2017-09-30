@@ -1,0 +1,1 @@
+LIBDOS_LIBADD =

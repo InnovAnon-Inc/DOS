@@ -6,7 +6,7 @@ AM_CPPFLAGS += -I $(top_srcdir)/glitter/src
 SUBDIRS += ../YACS
 AM_CPPFLAGS += -I $(top_srcdir)/YACS/src
 
-LIBDOS_LIBADD =
+include Makefile-LIBADD.inc
 
 lib_LTLIBRARIES = libdos.la
 include_HEADERS = dos.h
