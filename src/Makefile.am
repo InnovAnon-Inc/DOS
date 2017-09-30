@@ -1,10 +1,10 @@
 AM_CPPFLAGS = -D__STDC_INT64__
 
 SUBDIRS = ../glitter
-AM_CPPFLAGS += -I ../glitter/src
+AM_CPPFLAGS += -I $(top_srcdir)/glitter/src
 
 SUBDIRS += ../YACS
-AM_CPPFLAGS += -I ../YACS/src
+AM_CPPFLAGS += -I $(top_srcdir)/YACS/src
 
 LIBDOS_LIBADD =
 
