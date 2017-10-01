@@ -8,4 +8,4 @@ if USE_MODULES
 FORKBOMB_LIBADD += ../YACS/src/.libs/libcowsay.la $(LIBCOWSAY_LIBADD)
 else
 FORKBOMB_LIBADD += -lcowsay $(LIBCOWSAY_LIBADD)
-fi
+endif
