@@ -15,4 +15,4 @@ include_HEADERS = dos.h
 libdos_la_LIBADD = $(LIBDOS_LIBADD)
 
 bin_PROGRAMS = forkbomb
-forkbomb_LDADD = $(FORKBOMB_LDADD)
+forkbomb_LDADD = $(FORKBOMB_LIBADD)
