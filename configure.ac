@@ -9,6 +9,11 @@ AC_CONFIG_FILES([
  Makefile
  src/Makefile
 ])
+
+AC_ARG_ENABLE([use-submodules],
+    AS_HELP_STRING([--enable-use-submodules], [Enable use submodules]))
+AM_CONDITIONAL([USE_SUBMODULES], [test x"$enable_use_submodules" = "xyes"])
+
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SUBDIRS([glitter YACS])
 
