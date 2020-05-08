@@ -1,4 +1,4 @@
-include $(top_srcdir)/YACS/src/Makefile-LIBADD.inc
+#include $(top_srcdir)/YACS/src/Makefile-LIBADD.inc
 
 LIBDOS_LIBADD =
 
