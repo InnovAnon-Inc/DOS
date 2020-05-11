@@ -8,7 +8,8 @@ AM_CPPFLAGS = -D__STDC_INT64__
 #AM_CPPFLAGS += -I $(top_srcdir)/YACS/src
 #endif
 
-include Makefile-LIBADD.inc
+#include Makefile-LIBADD.inc
+dist_bin_SCRIPTS = libdos_config forkbomb_config
 
 lib_LTLIBRARIES = libdos.la
 include_HEADERS = dos.h
