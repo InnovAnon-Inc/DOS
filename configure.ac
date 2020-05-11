@@ -15,7 +15,7 @@ AC_ARG_ENABLE([use-submodules],
 AM_CONDITIONAL([USE_SUBMODULES], [test x"$enable_use_submodules" = "xyes"])
 
 AC_CONFIG_MACRO_DIR([m4])
-AC_CONFIG_SUBDIRS([glitter YACS])
+#AC_CONFIG_SUBDIRS([glitter YACS])
 
 AC_CHECK_HEADERS([stdbool.h stdio.h stdlib.h unistd.h])
 AC_CHECK_HEADERS([cowsay.h glitter.h])
