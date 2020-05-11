@@ -1,6 +1,0 @@
-[submodule "m4"]
-	path = m4
-	url = https://github.com/InnovAnon-Inc/m4-common.git
-[submodule "glitter"]
-	path = glitter
-	url = https://github.com/InnovAnon-Inc/glitter.git
