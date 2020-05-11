@@ -4,6 +4,3 @@
 [submodule "YACS"]
 	path = YACS
 	url = https://github.com/InnovAnon-Inc/YACS.git
-[submodule "glitter"]
-	path = glitter
-	url = https://github.com/InnovAnon-Inc/glitter.git
