@@ -1,6 +1,3 @@
 [submodule "m4"]
 	path = m4
 	url = https://github.com/InnovAnon-Inc/m4-common.git
-[submodule "YACS"]
-	path = YACS
-	url = https://github.com/InnovAnon-Inc/YACS.git
