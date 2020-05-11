@@ -1,0 +1,6 @@
+# glitter
+OMG it's everywhere!
+glitter everywhere is never a good thing...
+==========
+because libcommon or libutil or libutils is probably already taken...
+and libinnovanon-inc-util seems a bit absurd.
