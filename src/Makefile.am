@@ -13,7 +13,8 @@ dist_bin_SCRIPTS = libdos_config forkbomb_config
 
 lib_LTLIBRARIES = libdos.la
 include_HEADERS = dos.h
-libdos_la_LIBADD = $(LIBDOS_LIBADD)
+libdos_la_LIBADD = @LIBDOS_LIBADD@
 
 bin_PROGRAMS = forkbomb
-forkbomb_LDADD = $(FORKBOMB_LIBADD)
+forkbomb_LDADD = @FORKBOMB_LIBADD@
+EXTRA_forkbomb_DEPENDENCIES = libdos.la

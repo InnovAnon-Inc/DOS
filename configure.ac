@@ -22,10 +22,11 @@ AC_CHECK_HEADERS([cowsay.h glitter.h])
 
 AC_CHECK_LIB([cowsay],[ezcowsay])
 
-LIBDOS_LIBADD="`PATH=src:$PATH libdos_config --libs`"
+srcdir = @srcdir@
+LIBDOS_LIBADD="`PATH=$(srcdir)src:$PATH libdos_config --libs`"
 AC_SUBST(LIBDOS_LIBADD)
 
-FORKBOMB_LIBADD="libdos.la `PATH=src:$PATH forkbomb_config --libs`"
+FORKBOMB_LIBADD="`PATH=$(srcdir)src:$PATH forkbomb_config --libs`"
 AC_SUBST(FORKBOMB_LIBADD)
 
 INNOVANON_WARNINGS([])
