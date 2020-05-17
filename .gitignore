@@ -12,6 +12,8 @@ config.status
 libtool
 Makefile
 stamp-h1
+confdefs.h
+confXCrYNM/*
 
 m4/libtool.m4
 m4/ltoptions.m4
@@ -37,4 +39,64 @@ stamp-h1
 
 # custom
 *-test
+zelda
+laden
+cowsay
 
+# dpkg
+debian/
+
+# pkg-config
+*.pc
+
+
+
+# Miserable desktop garbage
+
+## OSX Crap
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+## Windows Crap
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+## Linux Crap
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+## Vim Crap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+tags
