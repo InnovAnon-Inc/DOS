@@ -1,15 +1,15 @@
 AM_CPPFLAGS = -D__STDC_INT64__
 
-#include Makefile-LIBADD.inc
-dist_bin_SCRIPTS = libdos_config forkbomb_config
-
 lib_LTLIBRARIES =
 bin_PROGRAMS    =
 
 lib_LTLIBRARIES += libdos.la
 include_HEADERS = dos.h
-libdos_la_LIBADD = @LIBDOS_LIBADD@
+libdos_la_CPPFLAGS = $(GLITTER_CFLAGS)
+libdos_la_LIBADD   = $(GLITTER_LIBS)
 
 bin_PROGRAMS += forkbomb
-forkbomb_LDADD = @FORKBOMB_LIBADD@
+forkbomb_CPPFLAGS =       $(COWSAY_CFLAGS) $(GLITTER_CFLAGS)
+forkbomb_LDADD    = -ldos $(COWSAY_LIBS)   $(GLITTER_LIBS)
 EXTRA_forkbomb_DEPENDENCIES = libdos.la
+

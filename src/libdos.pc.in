@@ -1,0 +1,15 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+#dos_utility=dos-test
+
+Name: @PACKAGE_NAME@
+Description: dos library
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -ldos
+Cflags: -I${includedir}
+Requires: glitter
+Requires.private:
+

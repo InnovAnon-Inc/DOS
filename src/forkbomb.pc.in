@@ -1,0 +1,15 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+#forkbomb_utility=forkbomb-test
+
+Name: @PACKAGE_NAME@
+Description: forkbomb library
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -ldos
+Cflags: -I${includedir}
+Requires:
+Requires.private: glitter libcowsay
+

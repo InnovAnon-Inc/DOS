@@ -8,29 +8,27 @@ AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([
  Makefile
  src/Makefile
+ src/libdos.pc
+ src/forkbomb.pc
 ])
+
+PKG_PROG_PKG_CONFIG
 
 AC_ARG_ENABLE([use-submodules],
     AS_HELP_STRING([--enable-use-submodules], [Enable use submodules]))
 AM_CONDITIONAL([USE_SUBMODULES], [test x"$enable_use_submodules" = "xyes"])
 
 AC_CONFIG_MACRO_DIR([m4])
-#AC_CONFIG_SUBDIRS([glitter YACS])
 
 AC_CHECK_HEADERS([stdbool.h stdio.h stdlib.h unistd.h])
-AC_CHECK_HEADERS([cowsay.h glitter.h])
+#AC_CHECK_HEADERS([cowsay.h glitter.h])
 
-AC_CHECK_LIB([cowsay],[ezcowsay])
+#AC_CHECK_LIB([cowsay],[ezcowsay])
 
-#srcdir = @srcdir@
-#LIBDOS_LIBADD="`PATH=$(srcdir)src:$PATH libdos_config --libs`"
-LIBDOS_LIBADD="`PATH=src:$PATH libdos_config --libs`"
-AC_SUBST(LIBDOS_LIBADD)
-
-#FORKBOMB_LIBADD="`PATH=$(srcdir)src:$PATH forkbomb_config --libs`"
-FORKBOMB_LIBADD="`PATH=src:$PATH forkbomb_config --libs`"
-AC_SUBST(FORKBOMB_LIBADD)
+PKG_CHECK_MODULES([GLITTER],[glitter],,)
+PKG_CHECK_MODULES([COWSAY],[libcowsay],,)
 
 INNOVANON_WARNINGS([])
 
 AC_OUTPUT
+
