@@ -1,4 +1,4 @@
-AC_INIT([libdos], [0.0], [laurence.a.maddox@gmail.com])
+AC_INIT([libdos], [1.0], [InnovAnon-Inc@protonmail.com])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_PROG_CC

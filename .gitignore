@@ -14,6 +14,7 @@ Makefile
 stamp-h1
 confdefs.h
 confXCrYNM/*
+acinclude.m4
 
 m4/libtool.m4
 m4/ltoptions.m4
@@ -48,6 +49,9 @@ debian/
 
 # pkg-config
 *.pc
+
+# doxygen
+doxygen-doc
 
 
 
