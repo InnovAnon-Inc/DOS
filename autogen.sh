@@ -1,4 +1,4 @@
-#! /bin/bash
-set -exo nounset
+#! /usr/bin/env bash
+set -exu
 
 autoreconf --verbose --force --install
