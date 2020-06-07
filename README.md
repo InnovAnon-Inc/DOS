@@ -11,9 +11,9 @@ multi-user system.
 It is your Sys Admin's responsibility to properly anticipate "use-cases" and to
 fortify his server against them:
 
-https://www.cyberciti.biz/tips/linux-limiting-user-process.html
+<https://www.cyberciti.biz/tips/linux-limiting-user-process.html>
 
-https://lzone.de/blog/Apply-changes-to-limits.conf-immediately
+<https://lzone.de/blog/Apply-changes-to-limits.conf-immediately>
 
 It is Mgmt's responsibility to invest a sufficiently in a competent IT
 department.
@@ -42,7 +42,6 @@ LFS-style--add user/group which will now fail to DOS you
 
 - sudo groupadd dos
 - sudo useradd dos -s /bin/bash -g dos -m -k /dev/null dos
--
 
 configure that user's profile to easily run our custom softwarez
 ----------
@@ -79,7 +78,8 @@ run it as the user who should*** fail to DOS you
 
 - sudo -u dos -i forkbomb
 
-*** "'should' is a moral statement"
+> 'should' is a moral statement
+> -- Dr. S. Robbins
 ----------
 
 [![CircleCI](https://img.shields.io/circleci/build/github/InnovAnon-Inc/DOS?color=%23FF1100&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://circleci.com/gh/InnovAnon-Inc/DOS)
